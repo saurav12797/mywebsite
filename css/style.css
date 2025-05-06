@@ -370,6 +370,7 @@ img {
         background-size:cover;
         position: relative;
         height: 100%;
+        top: -5%;
     }
 }
 
@@ -397,6 +398,7 @@ canvas{
     display: table;
     margin: 0;
     position: relative;
+    top: -5%;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -1229,3 +1231,24 @@ text-align: justify;
 
 
 /* ends */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6); /* dark semi-transparent */
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%; /* move arrows a bit down */
+  width: 6%;
+  margin: 0 10px;
+}
+
+/* Optional hover effect */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
