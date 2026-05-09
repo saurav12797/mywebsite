@@ -507,6 +507,89 @@ text-align: justify;
     margin-top: 90px;
 }
 
+.about-intro {
+    text-align: left;
+    margin-bottom: 18px;
+    line-height: 1.9;
+}
+
+.about-readmore-toggle {
+    margin-top: -2px;
+    margin-bottom: 6px;
+}
+
+.about-readmore-btn {
+    border: none;
+    background: transparent;
+    color: #DD1B42;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    transition: color 0.25s ease;
+}
+
+.about-readmore-btn:hover,
+.about-readmore-btn:focus {
+    color: #c31336;
+    text-decoration: underline;
+}
+
+.about-readless-toggle {
+    margin-top: 8px;
+}
+
+.about-readmore-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    transform: translateY(-4px);
+    transition: max-height 0.7s ease, opacity 0.5s ease, margin-top 0.35s ease, transform 0.35s ease;
+}
+
+.about-readmore-content.is-open {
+    max-height: 1400px;
+    opacity: 1;
+    margin-top: 16px;
+    transform: translateY(0);
+}
+
+.about-readmore-content p {
+    text-align: left;
+    margin-bottom: 14px;
+    line-height: 1.9;
+}
+
+.about-inline-link {
+    color: #DD1B42;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.about-inline-link:hover,
+.about-inline-link:focus {
+    color: #c31336;
+}
+
+.ncc-link {
+    font-weight: 700;
+}
+
+.ncc-link::after {
+    content: " \2192";
+}
+
+@media (max-width: 767px) {
+    .about-intro,
+    .about-readmore-content p {
+        line-height: 1.85;
+    }
+}
+
 .about-text-left {
     margin-top: 90px;
 }

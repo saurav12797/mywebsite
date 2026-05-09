@@ -82,6 +82,8 @@ $(document).ready(function () {
 		autoplay: true,
 		singleItem: true,
 		loop: true,
+		touchDrag: false,
+		mouseDrag: false,
 		responsive:{
 			0:{
 				items:1
