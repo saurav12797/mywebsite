@@ -717,6 +717,10 @@ text-align: justify;
 	color:#DD1B42;
 }
 
+#services-carousel .owl-stage-outer {
+    touch-action: pan-y;
+}
+
 
 
 /*-------- Number area starts-----------*/
