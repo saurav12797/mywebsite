@@ -80,19 +80,25 @@ $(document).ready(function () {
 		paginationSpeed: 800,
 		smartSpeed: 500,
 		autoplay: true,
-		singleItem: true,
 		loop: true,
 		touchDrag: true,
 		mouseDrag: true,
+		pullDrag: false,
 		responsive:{
 			0:{
-				items:1
+				items:1,
+				touchDrag: false,
+				mouseDrag: false
 			},
 			680:{
-				items:2
+				items:2,
+				touchDrag: false,
+				mouseDrag: false
 			},
 			1000:{
-				items:3
+				items:3,
+				touchDrag: true,
+				mouseDrag: true
 			}
 		}
 	});

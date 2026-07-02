@@ -4,6 +4,8 @@
 
 html,body{
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -356,21 +358,40 @@ img {
 
 
 .banner-area{
-    background-image: url(../images/home/saurav.jpg); 
-    background-position: center;
-    background-size:cover;
+    background-image: url(../images/home/saurav_new.png); 
+    background-position: right center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: #000;
     position: relative;
-    height: 100%;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 @media(max-width:767px)
 {
     .banner-area{
-        background-image: url(../images/home/saurav1.jpg); 
-        background-position: center;
-        background-size:cover;
+        background-image: url(../images/home/saurav_new.png); 
+        background-position: 78% center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #000;
         position: relative;
-        height: 100%;
-        top: -5%;
+        height: 100vh;
+        height: 100dvh;
+        min-height: 100vh;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+        top: 0;
+    }
+
+    .banner-table{
+        top: 0;
     }
 }
 
@@ -398,7 +419,7 @@ canvas{
     display: table;
     margin: 0;
     position: relative;
-    top: -5%;
+    top: 0;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -464,6 +485,10 @@ canvas{
 
 
 /*---------- About area css starts---------------*/
+.about-area {
+    background-color: #ffffff;
+}
+
 .about-text-right
 {
 text-align: justify;
@@ -717,7 +742,11 @@ text-align: justify;
 	color:#DD1B42;
 }
 
-#services-carousel .owl-stage-outer {
+#services-carousel.owl-carousel,
+#services-carousel .owl-stage-outer,
+#services-carousel .owl-stage,
+#services-carousel .owl-item,
+#services-carousel .single-services {
     touch-action: pan-y;
 }
 
